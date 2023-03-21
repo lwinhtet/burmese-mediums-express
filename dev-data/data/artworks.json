@@ -1,0 +1,54 @@
+[
+  {
+    "_id": "638a25c4efeb2b21e9ae3304",
+    "title": "Artwork 6",
+    "categories": ["sci-fi", "game"],
+    "softwares": ["blender"],
+    "tags": ["marvel", "captain", "america"],
+    "user": "5c8a1d5b0190b214360dc057",
+    "assets": [
+      {
+        "title": "cm",
+        "imageUrl": "/img/heroes/cm.jpg",
+        "sortNum": 1,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpg"
+      },
+      {
+        "title": "cm2",
+        "imageUrl": "/img/heroes/cm2.jpg",
+        "sortNum": 2,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpg"
+      }
+    ]
+  },
+  {
+    "_id": "638a25c4efeb2b21e9ae3309",
+    "title": "End Game",
+    "categories": ["fantasy", "sci-fi", "crime", "game"],
+    "softwares": ["houdini", "maya"],
+    "tags": ["marvel", "infinity", "war"],
+    "user": "5c8a1e1a2f8fb814b56fa182",
+    "assets": [
+      {
+        "title": "iw",
+        "imageUrl": "/img/heroes/iw.jpg",
+        "sortNum": 1,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpg"
+      },
+      {
+        "title": "iw2",
+        "imageUrl": "/img/heroes/iw2.jpg",
+        "sortNum": 2,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpg"
+      }
+    ]
+  }
+]

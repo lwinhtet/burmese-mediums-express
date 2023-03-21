@@ -1,0 +1,241 @@
+[
+  {
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 5,
+    "title": "DC",
+    "price": 700,
+    "categories": ["fantasy", "sci-fi", "crime", "game"],
+    "softwares": ["maya", "zbrush"],
+    "tags": ["dc", "superman", "batman", "wonder woman"],
+    "assets": [
+      {
+        "title": "ww",
+        "originalName": "ww",
+        "imageUrl": "/img/heroes/ww.jpeg",
+        "caption": "Caption 1",
+        "sortNum": 1,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpeg"
+      },
+      {
+        "title": "bm",
+        "originalName": "bm",
+        "imageUrl": "/img/heroes/bm.jpeg",
+        "caption": "Caption 2",
+        "sortNum": 2,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpeg"
+      },
+      {
+        "title": "sm",
+        "originalName": "sm",
+        "imageUrl": "/img/heroes/sm.webp",
+        "caption": "Caption 1",
+        "sortNum": 3,
+        "mimeType": "image/webp",
+        "assetType": "photo",
+        "extension": "webp"
+      },
+      {
+        "title": "sm1",
+        "originalName": "sm1",
+        "imageUrl": "/img/heroes/sm1.jpeg",
+        "caption": "Caption 2",
+        "sortNum": 4,
+        "mimeType": "image/jpg",
+        "assetType": "photo",
+        "extension": "jpeg"
+      }
+    ]
+  },
+  {
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 7,
+    "title": "Artwork 2",
+    "price": 700,
+    "categories": ["sci-fi"],
+    "softwares": ["maya", "zbrush"],
+    "tags": ["thor"],
+    "assets": [
+      {
+        "title": "sw",
+        "originalName": "sw",
+        "imageUrl": "/img/heroes/sw.jpg",
+        "caption": "Caption 1",
+        "sortNum": 1,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpg"
+      },
+      {
+        "title": "ds",
+        "originalName": "ds",
+        "imageUrl": "/img/heroes/ds.jpg",
+        "caption": "Caption 2",
+        "sortNum": 2,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpg"
+      }
+    ]
+  },
+  {
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 4,
+    "title": "Artwork 3",
+    "price": 500,
+    "categories": ["fantasy"],
+    "softwares": ["unreal-engine", "zbrush"],
+    "tags": ["marvel"],
+    "assets": [
+      {
+        "title": "ss",
+        "originalName": "ss",
+        "imageUrl": "/img/heroes/ss.jpg",
+        "caption": "Caption 1",
+        "sortNum": 1,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpg"
+      },
+      {
+        "title": "m",
+        "originalName": "m",
+        "imageUrl": "/img/heroes/m.jpg",
+        "caption": "Caption 2",
+        "sortNum": 2,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpg"
+      }
+    ]
+  },
+  {
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 7,
+    "title": "Artwork 4",
+    "price": 500,
+    "categories": ["fantasy"],
+    "softwares": ["blender", "3D-subtance-painter"],
+    "tags": ["marvel"],
+    "assets": [
+      {
+        "title": "bp",
+        "originalName": "bp",
+        "imageUrl": "/img/heroes/bp.jpg",
+        "caption": "Caption 1",
+        "sortNum": 1,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpg"
+      },
+      {
+        "title": "mk",
+        "originalName": "mk",
+        "imageUrl": "/img/heroes/mk.jpg",
+        "caption": "Caption 2",
+        "sortNum": 2,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpg"
+      }
+    ]
+  },
+  {
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 3,
+    "title": "Artwork 5",
+    "price": 300,
+    "categories": ["fantasy", "game"],
+    "softwares": ["maya", "zbrush"],
+    "medium": ["portrait"],
+    "tags": ["marvel"],
+    "assets": [
+      {
+        "title": "jf",
+        "originalName": "jf",
+        "imageUrl": "/img/heroes/jf.jpg",
+        "caption": "Caption 1",
+        "sortNum": 1,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpg"
+      },
+      {
+        "title": "js2",
+        "originalName": "js2",
+        "imageUrl": "/img/heroes/js2.jpeg",
+        "caption": "Caption 2",
+        "sortNum": 2,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpg"
+      }
+    ]
+  },
+  {
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 8,
+    "title": "Artwork 6",
+    "price": 200,
+    "categories": ["sci-fi", "game"],
+    "softwares": ["blender"],
+    "tags": ["marvel", "captain", "america"],
+    "assets": [
+      {
+        "title": "cm",
+        "originalName": "cm",
+        "imageUrl": "/img/heroes/cm.jpg",
+        "caption": "Caption 1",
+        "sortNum": 1,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpg"
+      },
+      {
+        "title": "cm2",
+        "originalName": "cm2",
+        "imageUrl": "/img/heroes/cm2.jpg",
+        "caption": "Caption 2",
+        "sortNum": 2,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpg"
+      }
+    ]
+  },
+  {
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 4,
+    "title": "End Game",
+    "price": 100,
+    "categories": ["fantasy", "sci-fi", "crime", "game"],
+    "softwares": ["houdini", "maya"],
+    "tags": ["marvel", "infinity", "war"],
+    "users": ["5c8a1d5b0190b214360dc057", "5c8a1e1a2f8fb814b56fa182"],
+    "assets": [
+      {
+        "title": "iw",
+        "originalName": "iw",
+        "imageUrl": "/img/heroes/iw.jpg",
+        "caption": "Caption 1",
+        "sortNum": 1,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpg"
+      },
+      {
+        "title": "iw2",
+        "originalName": "iw2",
+        "imageUrl": "/img/heroes/iw2.jpg",
+        "caption": "Caption 2",
+        "sortNum": 2,
+        "mimeType": "image/jpeg",
+        "assetType": "photo",
+        "extension": "jpg"
+      }
+    ]
+  }
+]

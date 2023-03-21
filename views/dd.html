@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Cosmos: Reset Password Email</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        width: 100%;
+        height: 100%;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      body {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 500px;
+        padding: 40px;
+        margin: 0 auto;
+        background-color: #f2f2f2;
+      }
+
+      img {
+        display: table;
+        width: 70px;
+        height: auto;
+        padding: 1rem;
+        margin: 0 auto;
+      }
+
+      p {
+        text-align: center;
+        font-size: 13px;
+        font-weight: 300;
+      }
+
+      .mainHeader {
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .resetlink {
+        display: table;
+        margin: 0 auto;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 10px 16px;
+        color: white;
+        background-color: #59bc59;
+        border-color: #59bc59;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: all 0.4s;
+      }
+
+      .resetlink:hover {
+        background-color: #1d6b1d;
+        border-color: #1d6b1d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <img src="/public/img/logo.png" class="logo" /> -->
+      <p class="mainHeader">
+        We've received a request to reset the password for Cosmos account
+        associated with {{email}}.
+      </p>
+      <p>You can reset your account by clicking the link below!</p>
+      <a href="{{resetURL}}" class="resetlink">Reset Your Password</a>
+      <p>
+        If this was a mistake, just ignore this email and nothing will happen
+      </p>
+    </div>
+  </body>
+</html>
