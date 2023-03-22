@@ -58,7 +58,6 @@ exports.getOne = (Model, popOptions, findBy = null) =>
 
 // exports.getOneByHash = (Model, popOptions) =>
 //   catchAsync(async (req, res, next) => {
-//     console.log(111, req.params);
 //     let query = Model.find({ hashId: req.params.id });
 //     if (popOptions) query = query.populate(popOptions);
 //     const doc = await query;
