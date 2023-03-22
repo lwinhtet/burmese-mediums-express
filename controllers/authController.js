@@ -5,7 +5,7 @@ const crypto = require('crypto');
 const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
 const User = require('../models/userModel');
-const sendEmail = require('../utils/email');
+const Email = require('../utils/email');
 
 const signToken = id => {
   return jwt.sign({ id }, process.env.JWT_SECRET, {
@@ -205,7 +205,11 @@ exports.updateMyPassword = catchAsync(async (req, res, next) => {
 });
 
 exports.forgotPassword = catchAsync(async (req, res, next) => {
-  const user = await User.findOne({ email: req.body.email });
+  const user = await User.findOne({
+    email: req.body.email,
+    googleID: { $exists: false }
+  });
+
   if (!user) {
     return next(new AppError('There is no user with this email', 404));
   }
@@ -222,11 +226,15 @@ exports.forgotPassword = catchAsync(async (req, res, next) => {
 
   try {
     // sendEmail is from ../utils/email.js
-    await sendEmail({
-      email: user.email,
-      subject: 'Your password reset token (valid for 10 min)',
-      resetURL
-    });
+    //
+    await new Email(user, resetURL).sendResetPassword();
+    // await sendEmail(
+    //   {
+    //     name: user.name,
+    //     email: user.email
+    //   },
+    //   resetURL
+    // );
     res.status(200).json({
       status: 'success',
       message: 'Token sent to email'

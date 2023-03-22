@@ -29,8 +29,9 @@
       .container {
         width: 500px;
         padding: 40px;
-        margin: 0 auto;
-        background-color: #f2f2f2;
+        margin: 70px auto;
+        border-radius: 20px;
+        background-color: #f9f9f9;
       }
 
       img {
@@ -52,19 +53,25 @@
         font-weight: 500;
       }
 
+      .btnContainer {
+        display: block;
+        width: 100%;
+        
+      }
+
       .resetlink {
-        display: table;
+        display: block;
+        width: fit-content;
         margin: 0 auto;
         font-size: 14px;
         font-weight: 500;
         padding: 10px 16px;
-        color: white;
+        color: white!important;
         background-color: #59bc59;
         border-color: #59bc59;
         border: 1px solid transparent;
         border-radius: 8px;
         text-decoration: none;
-        transition: all 0.4s;
       }
 
       .resetlink:hover {
@@ -77,11 +84,11 @@
     <div class="container">
       <!-- <img src="/public/img/logo.png" class="logo" /> -->
       <p class="mainHeader">
-        We've received a request to reset the password for Cosmos account
+        We've received a request to reset the password for Burmese Mediums account
         associated with {{email}}.
       </p>
       <p>You can reset your account by clicking the link below!</p>
-      <a href="{{resetURL}}" class="resetlink">Reset Your Password</a>
+      <div class="btnContainer"><a href="{{resetURL}}" class="resetlink">Reset Your Password</a></div>
       <p>
         If this was a mistake, just ignore this email and nothing will happen
       </p>
