@@ -40,8 +40,8 @@ class APIFeatures {
     if (this.queryString.sort) {
       // sort('price ratingsAverage')
       let sortBy = this.queryString.sort.split(',').join(' ');
-      if (sortBy === 'latest') sortBy = { createdAt: -1, _id: 1 };
-      if (sortBy === 'oldest') sortBy = { createdAt: 1, _id: -1 };
+      if (sortBy === 'latest') sortBy = { createdAt: -1 };
+      if (sortBy === 'oldest') sortBy = { createdAt: 1 };
       this.query = this.query.sort(sortBy);
     } else {
       // * createdAt can be at the same time, so if date is same, sort with id

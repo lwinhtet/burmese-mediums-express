@@ -31,8 +31,21 @@ const DB = process.env.DATABASE.replace(
 
 const app = require('./app');
 
-/* server.js is our entry point to our app */
-
+/* 
+In native MongoDB driver, the MongoDB connection is live within the scope of the MongoClient.connect() 
+callback function, and you can use it to perform database operations until you explicitly close the 
+connection using client.close().
+But in mongoose, the popular MongoDB object modeling library for Node.js, the connection to the MongoDB server is 
+established differently from the native MongoDB driver. Mongoose provides a more declarative and 
+modular way to manage the database connection.
+With Mongoose, the connection to MongoDB is established only once when you call
+mongoose.connect(). Once connected, the connection remains active and is automatically
+managed by Mongoose. You don't need to explicitly manage the connection as you do with
+the native MongoDB driver.
+The connection remains live throughout the lifetime of your application. Mongoose handles
+reconnections and connection errors behind the scenes, ensuring that you can perform database
+operations seamlessly without worrying about managing the connection manually. 
+*/
 // {} is for dealing with some deprecation warning
 mongoose
   .connect(DB, {

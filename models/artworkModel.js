@@ -116,7 +116,8 @@ the collection bec the cost of always updating the index and keeping it in memor
 outweighs the benefit of having the index in the first place if we rarely have searches
 */
 // artworkSchema.index({ slug: 1 });
-artworkSchema.index({ price: 1, ratingsAverage: -1 });
+// artworkSchema.index({ price: 1, ratingsAverage: -1 });
+artworkSchema.index({ createdAt: 1 });
 
 // virtual populate
 artworkSchema.virtual('reviews', {
