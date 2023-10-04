@@ -222,8 +222,16 @@ exports.forgotPassword = catchAsync(async (req, res, next) => {
   // const resetURL = `${req.protocol}://${req.get(
   //   'host'
   // )}/api/v1/users/resetPassword/${resetToken}`;
-  const resetURL = `${req.protocol}://${process.env.F_HOSTNAME}:${process.env.F_PORT}/account/reset-password?token=${resetToken}`;
+  let protocol = 'http';
+  let hostname = `${process.env.F_HOSTNAME}:${process.env.F_PORT}`;
 
+  if (process.env.NODE_ENV === 'production') {
+    protocol = 'https';
+    hostname = process.env.F_HOSTNAME_PROD;
+  }
+
+  const resetURL = `${protocol}://${hostname}/account/reset-password?token=${resetToken}`;
+  console.log(resetURL);
   try {
     // sendEmail is from ../utils/email.js
     //

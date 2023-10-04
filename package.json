@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start:dev": "nodemon server.js",
-    "start:prod": "NODE_ENV=production nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js -p 8080",
     "debug": "ndb server.js",
     "db:import": "node dev-data/data/import-dev-data.js --import",
     "db:delete": "node dev-data/data/import-dev-data.js --delete"

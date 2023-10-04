@@ -70,7 +70,7 @@ Each time that there is an unhandledRejection somewhere in our app, process obj
 will emit an obj called unhandledRejection and so we can subscribe */
 process.on('unhandledRejection', err => {
   console.log('Unhandled Rejection!, 💥 Shutting down');
-  console.log(err.name, err.message);
+  console.log(11, err.name, err.message);
 
   // do doing server.close, we give the server basically time to finish all req that are still
   // pending or being handled at the time, then it will close

@@ -17,10 +17,13 @@ const portfolioRouter = require('./routes/portfolioRoutes');
 
 const reviewRouter = require('./routes/reviewRoutes');
 
-/* app.js is usually mainly used for middleware declarations, So we have all our mid
+/* app.js is usually mainly used for middleware declarations, So we have all our middleware
 that we want to apply to all the routes */
 
 const app = express();
+
+// Set Security HTTP response headers for security
+app.use(helmet());
 
 // Implements Cors
 // to add some headers to our responses 'Access-Control-Allow-Origin'
@@ -33,7 +36,6 @@ app.use(
     origin: 'http://127.0.0.1:3000'
   })
 );
-
 // .options is just another http Method that we can respond to like app.get, app.delete.
 /* browser send an option req when there is a 'preflight phase'(preflight phase happen 
   whenever use request 'PUT','PATCH, DELETE, req that send cookie and req that use non-stadard headers'). 
@@ -41,9 +43,6 @@ app.use(
 // app.options('*', cors());
 // only tours can be deleted from a cross-origin req, not users, artworks
 // app.options('/api/v1/users/login', cors());
-
-// Set Security HTTP headers for security
-app.use(helmet());
 
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
@@ -53,8 +52,8 @@ if (process.env.NODE_ENV === 'development') {
 // creating middleware function called 'limiter'
 const limiter = rateLimit({
   // 100 req per hour(windowMs) for same IP
-  max: 1000, // set to 100
-  windowMs: 60 * 60 * 1000,
+  max: 1000, // set to 100 @decrpted change max to limit
+  windowMs: 60 * 60 * 1000, // length of the time window during which the max requests are allowed
   message: 'Too many requests from this IP, please try again in an hour!'
 });
 // only affect routes that starts with '/api'

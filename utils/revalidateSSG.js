@@ -7,8 +7,11 @@ const axios = require('axios');
 
 const token = process.env.MY_REVALIDATE_TOKEN;
 let protocol = 'http://';
-const hostname = `${process.env.F_HOSTNAME}:${process.env.F_PORT}`;
-if (process.env.NODE_ENV === 'production') protocol = 'https://';
+let hostname = `${process.env.F_HOSTNAME}:${process.env.F_PORT}`;
+if (process.env.NODE_ENV === 'production') {
+  protocol = 'https://';
+  hostname = process.env.F_HOSTNAME_PROD;
+}
 
 // module.exports = (
 //   revalidatePage,
